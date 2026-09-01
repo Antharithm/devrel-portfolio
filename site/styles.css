@@ -989,6 +989,52 @@ section { scroll-margin-top: 28px; }
 }
 @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
 
+/* ---------- Floating buttons ---------- */
+
+.fabs {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.fab {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 0;
+  font-size: 18px;
+  color: var(--text);
+  background: var(--glass-2);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  backdrop-filter: blur(16px) saturate(140%);
+  box-shadow: 0 0 0 1px var(--divider-2), var(--shadow-1);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: background var(--dur) var(--ease-out), color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out), transform 200ms var(--ease-out), opacity 260ms var(--ease-out);
+}
+.fab:hover {
+  color: var(--text);
+  background: var(--surface);
+  box-shadow: 0 0 0 1px var(--divider-3), var(--shadow-2);
+  transform: translateY(-2px);
+}
+.fab:active { transform: scale(0.94); }
+.fab.is-hidden {
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+}
+@media (max-width: 640px) {
+  .fabs { right: 14px; bottom: 14px; }
+  .fab { width: 40px; height: 40px; font-size: 16px; }
+}
+
 /* ---------- Toast ---------- */
 
 .toast {

@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://i.ytimg.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="styles.css?v=12">
+<link rel="stylesheet" href="styles.css?v=13">
 </head>
 <body>
 
@@ -32,6 +32,7 @@
     <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
     <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></symbol>
     <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></symbol>
     <symbol id="i-youtube" viewBox="0 0 24 24"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></symbol>
   </defs>
 </svg>
@@ -240,6 +241,11 @@
   </main>
 </div>
 
+<div class="fabs">
+  <a class="fab" href="https://github.com/Antharithm" target="_blank" rel="noopener" aria-label="GitHub profile" title="GitHub"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a>
+  <button id="to-top" class="fab is-hidden" type="button" aria-label="Back to top" title="Back to top"><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg></button>
+</div>
+
 <dialog id="player" class="player" aria-labelledby="player-title">
   <div class="player-box">
     <div id="player-frame" class="player-frame"></div>
@@ -255,7 +261,7 @@
 
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-<script src="videos.js?v=12"></script>
-<script src="script.js?v=12"></script>
+<script src="videos.js?v=13"></script>
+<script src="script.js?v=13"></script>
 </body>
 </html>

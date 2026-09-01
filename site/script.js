@@ -297,6 +297,17 @@
     });
   });
 
+  /* ---------- Back to top ---------- */
+
+  const toTop = $("#to-top");
+  if (toTop) {
+    let tRaf = 0;
+    const toggleTop = () => { tRaf = 0; toTop.classList.toggle("is-hidden", scrollY < 600); };
+    addEventListener("scroll", () => { if (!tRaf) tRaf = requestAnimationFrame(toggleTop); }, { passive: true });
+    toggleTop();
+    toTop.addEventListener("click", () => scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" }));
+  }
+
   /* ---------- Footer year ---------- */
 
   const year = $("#year");
