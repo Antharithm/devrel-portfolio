@@ -530,7 +530,7 @@ section { scroll-margin-top: 28px; }
 
 .stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1px;
   margin-top: 44px;
   border-radius: var(--r-lg);
@@ -1107,6 +1107,7 @@ section { scroll-margin-top: 28px; }
   main { padding: 44px 24px 64px; gap: 64px; }
   section { scroll-margin-top: 64px; }
   .stats { grid-template-columns: repeat(2, 1fr); }
+  .stats .stat:nth-child(3) { grid-column: 1 / -1; }
   .flag { grid-template-columns: 1fr; }
   .poster { order: -1; aspect-ratio: 16 / 9; }
   .poster::after { background: linear-gradient(to top, var(--surface), transparent 32%); }
