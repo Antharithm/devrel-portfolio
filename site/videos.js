@@ -31,8 +31,6 @@ window.PORTFOLIO_VIDEOS = [
   {
     url: "https://youtu.be/L1xdGyMtAwI",
     title: "Become a Web3 Product Manager with Moralis & Claude",
-    short: "Web3 product manager with Claude Code",
-    featured: "Agentic workflow · Whale Watcher app",
     topic: "AI",
     channel: "Moralis for Developers",
   },
