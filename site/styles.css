@@ -314,16 +314,26 @@ button { font: inherit; color: inherit; }
   position: sticky;
   top: 0;
   z-index: 40;
-  gap: 4px;
-  overflow-x: auto;
-  scrollbar-width: none;
-  padding: 10px 16px;
+  min-width: 0;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px 10px 16px;
   background: var(--glass);
   -webkit-backdrop-filter: blur(20px) saturate(140%);
   backdrop-filter: blur(20px) saturate(140%);
   border-bottom: 1px solid var(--divider);
 }
-.topbar::-webkit-scrollbar { display: none; }
+.topbar-track {
+  display: flex;
+  flex: 1 1 auto;
+  min-width: 0;
+  gap: 4px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+  mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+}
+.topbar-track::-webkit-scrollbar { display: none; }
 .topbar a {
   flex: none;
   padding: 8px 12px;
@@ -370,13 +380,10 @@ button { font: inherit; color: inherit; }
 :root[data-theme="light"] .ico-sun { display: none; }
 :root:not([data-theme="light"]) .ico-moon { display: none; }
 .topbar .theme-toggle {
-  position: sticky;
-  right: 0;
-  margin-left: auto;
+  flex: none;
   width: 32px;
   height: 32px;
   font-size: 14px;
-  background: var(--glass);
 }
 
 /* ---------- Buttons, tags ---------- */
@@ -1082,7 +1089,7 @@ section { scroll-margin-top: 28px; }
 }
 
 @media (max-width: 900px) {
-  .shell { grid-template-columns: 1fr; }
+  .shell { grid-template-columns: minmax(0, 1fr); }
   .rail {
     position: static;
     height: auto;
