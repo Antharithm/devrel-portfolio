@@ -714,6 +714,18 @@ section { scroll-margin-top: 28px; }
 }
 .poster:hover img { transform: scale(1.04); }
 
+/* Docs card: link poster with a theme-matched screenshot. */
+.poster-link { text-decoration: none; color: inherit; }
+.poster-link img { object-position: left top; }
+.poster-link .img-light { display: none; }
+:root[data-theme="light"] .poster-link .img-light { display: block; }
+:root[data-theme="light"] .poster-link .img-dark { display: none; }
+.play-link .icon { margin-left: 0; }
+@media (min-width: 901px) {
+  /* The screenshot carries its own left margin, so a shorter fade keeps the logo clear. */
+  .poster-link::after { background: linear-gradient(to right, var(--surface), transparent 22%); }
+}
+
 /* ---------- Tutorials ---------- */
 
 .feat {
