@@ -13,6 +13,23 @@
    Order here = order on the page. Thumbnails come from YouTube automatically.
    ============================================================ */
 
+/* CONTINUUM SERIES: one row per video under the "Continuum" card.
+     url    YouTube link (plays in the modal) or any other link (opens in a new tab)
+     title  row title      focus  short grey summary
+   Order here = order on the page. */
+window.CONTINUUM_SERIES = [
+  {
+    url: "https://youtu.be/g3p_BZvZDN8",
+    title: "Introducing Continuum",
+    focus: "The event data infrastructure powering Moralis",
+  },
+  {
+    url: "https://www.linkedin.com/posts/moralisweb3_the-expensive-part-of-blockchain-data-infrastructure-activity-7503821166604685312-dm4h",
+    title: "Continuum for blockchain",
+    focus: "Ingest once, keep the history, replay from any point · 50+ networks",
+  },
+];
+
 window.PORTFOLIO_VIDEOS = [
   {
     url: "https://youtu.be/g3p_BZvZDN8",

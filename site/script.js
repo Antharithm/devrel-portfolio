@@ -71,6 +71,34 @@
     featEl.hidden = !featEl.children.length;
   }
 
+  /* ---------- Continuum series rows ---------- */
+
+  const seriesEl = $("#series");
+  if (seriesEl) {
+    (window.CONTINUUM_SERIES || []).forEach((v, i) => {
+      const id = ytId(v);
+      const el = document.createElement(id ? "button" : "a");
+      el.className = "feat-row";
+      const num = `<span class="feat-num">${String(i + 1).padStart(2, "0")}</span>`;
+      if (id) {
+        el.type = "button";
+        el.dataset.video = id;
+      } else {
+        el.href = v.url;
+        el.target = "_blank";
+        el.rel = "noopener";
+      }
+      el.innerHTML =
+        `<span class="feat-title">${num}${esc(v.title)}</span>` +
+        `<span class="feat-focus">${esc(v.focus || "")}</span>` +
+        (id
+          ? `<span class="feat-cta">Watch ${icon("play", "icon icon-sm")}</span>`
+          : `<span class="feat-cta">Watch on LinkedIn ${icon("arrow", "icon icon-sm")}</span>`);
+      seriesEl.append(el);
+    });
+    seriesEl.hidden = !seriesEl.children.length;
+  }
+
   /* ---------- Library: filters + grid ---------- */
 
   const grid = $("#vgrid");
