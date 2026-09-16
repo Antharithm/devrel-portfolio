@@ -720,7 +720,18 @@ section { scroll-margin-top: 28px; }
 .poster-link .img-light { display: none; }
 :root[data-theme="light"] .poster-link .img-light { display: block; }
 :root[data-theme="light"] .poster-link .img-dark { display: none; }
+.poster-app img { object-position: center; }
 .play-link .icon { margin-left: 0; }
+/* Link posters: park the arrow in the top-right corner so it never covers the artwork. */
+.play-link {
+  left: auto;
+  top: 14px;
+  right: 14px;
+  width: 44px;
+  height: 44px;
+  transform: none;
+}
+.poster:hover .play-link { transform: scale(1.08); }
 @media (min-width: 901px) {
   /* The screenshot carries its own left margin, so a shorter fade keeps the logo clear. */
   .poster-link::after { background: linear-gradient(to right, var(--surface), transparent 22%); }
