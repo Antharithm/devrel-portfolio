@@ -28,6 +28,11 @@ window.CONTINUUM_SERIES = [
     title: "Continuum for blockchain",
     focus: "Ingest once, keep the history, replay from any point · 50+ networks",
   },
+  {
+    url: "https://www.linkedin.com/posts/moralisweb3_as-ai-agents-start-moving-money-onchain-activity-7507733740920406018-lqU8",
+    title: "Continuum for AI agents",
+    focus: "Memory for agents moving money onchain · one ordered, replayable history",
+  },
 ];
 
 window.PORTFOLIO_VIDEOS = [
