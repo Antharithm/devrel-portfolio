@@ -111,14 +111,15 @@
       b.type = "button";
       b.className = "vcard";
       b.dataset.video = v.id;
-      b.dataset.topic = v.topic || "";
+      const tags = Array.isArray(v.topics) ? v.topics : [v.topic].filter(Boolean);
+      b.dataset.topics = tags.join("|");
       b.setAttribute("data-reveal", "");
       b.style.setProperty("--d", `${Math.min(i, 8) * 45}ms`);
       b.innerHTML =
         `<span class="vthumb"><img loading="lazy" decoding="async" src="${thumb(v.id)}" alt="">` +
         `<span class="play">${icon("play")}</span></span>` +
         `<span class="vtitle">${esc(v.title)}</span>` +
-        `<span class="vmeta">${esc([v.topic, v.channel].filter(Boolean).join(" · "))}</span>`;
+        `<span class="vmeta">${esc([...tags, v.channel].filter(Boolean).join(" · "))}</span>`;
       grid.append(b);
     });
   }
@@ -127,7 +128,9 @@
   setCount(videos.length);
 
   if (filt && grid) {
-    const topics = [...new Set(videos.map((v) => v.topic).filter(Boolean))];
+    const order = ["Overview", "AI", "Coding"];
+    const topics = [...new Set(videos.flatMap((v) => Array.isArray(v.topics) ? v.topics : [v.topic]).filter(Boolean))]
+      .sort((a, b) => (order.indexOf(a) + 1 || 99) - (order.indexOf(b) + 1 || 99));
     if (topics.length > 1) {
       ["All", ...topics].forEach((t, i) => {
         const c = document.createElement("button");
@@ -149,7 +152,7 @@
       const t = chip.dataset.topic;
       let n = 0;
       $$(".vcard", grid).forEach((card) => {
-        const show = t === "All" || card.dataset.topic === t;
+        const show = t === "All" || card.dataset.topics.split("|").includes(t);
         card.hidden = !show;
         if (!show) return;
         // Re-run the reveal with a fresh stagger so the filter feels animated, not abrupt.
