@@ -43,6 +43,12 @@ window.PORTFOLIO_VIDEOS = [
     channel: "Moralis for Developers",
   },
   {
+    url: "https://youtu.be/pcdGxpc526k",
+    title: "Introducing Moralis Data Feeds: Get Blockchain Data Into Your Own Database",
+    topics: ["Overview"],
+    channel: "Moralis for Developers",
+  },
+  {
     url: "https://www.youtube.com/watch?v=hq-SlxYji4w",
     title: "Build Web3 Apps With AI Using Real Onchain Data: Moralis Onchain Skills",
     short: "Teaching agents 135+ endpoints",
