@@ -33,6 +33,11 @@ window.CONTINUUM_SERIES = [
     title: "Continuum for AI agents",
     focus: "Memory for agents moving money onchain · one ordered, replayable history",
   },
+  {
+    url: "https://www.linkedin.com/posts/moralisweb3_apis-give-you-answers-data-feeds-gives-you-activity-7511458346038829056-suvY",
+    title: "Continuum for Data Feeds",
+    focus: "Own the dataset, not just the answer · delivered to your stack",
+  },
 ];
 
 window.PORTFOLIO_VIDEOS = [
