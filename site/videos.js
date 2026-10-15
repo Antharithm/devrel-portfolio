@@ -38,6 +38,11 @@ window.CONTINUUM_SERIES = [
     title: "Continuum for Data Feeds",
     focus: "Own the dataset, not just the answer · delivered to your stack",
   },
+  {
+    url: "https://www.linkedin.com/posts/moralisweb3_introducing-data-feeds-starter-our-new-standalone-activity-7516428708589760512-SpGr",
+    title: "Introducing Data Feeds Starter",
+    focus: "Standalone plan · custom SQL datasets delivered to your database",
+  },
 ];
 
 window.PORTFOLIO_VIDEOS = [
