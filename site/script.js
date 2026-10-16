@@ -22,7 +22,7 @@
     }
     rootEl.setAttribute("data-theme", t);
     const meta = $('meta[name="theme-color"]');
-    if (meta) meta.content = t === "light" ? "#f5f5f9" : "#070a08";
+    if (meta) meta.content = t === "light" ? "#f5f5f9" : "#050b16";
     $$(".theme-toggle").forEach((b) => b.setAttribute("aria-label", t === "light" ? "Switch to dark mode" : "Switch to light mode"));
   };
   applyTheme(rootEl.getAttribute("data-theme") || (lightMQ.matches ? "light" : "dark"), false);
@@ -237,6 +237,14 @@
         railNav.style.setProperty("--spy-y", `${a.offsetTop}px`);
         railNav.style.setProperty("--spy-h", `${a.offsetHeight}px`);
         railNav.style.setProperty("--spy-o", "1");
+        // On short screens the nav area scrolls; keep the active link in view.
+        const rail = railNav.closest(".rail-scroll");
+        if (rail && rail.scrollHeight > rail.clientHeight) {
+          const r = rail.getBoundingClientRect(), l = a.getBoundingClientRect(), pad = 24;
+          const dy = l.top < r.top + pad ? l.top - r.top - pad
+                   : l.bottom > r.bottom - pad ? l.bottom - r.bottom + pad : 0;
+          if (dy) rail.scrollBy({ top: dy, behavior: reduceMotion ? "auto" : "smooth" });
+        }
       }
     }
     // Keep the active pill visible in the mobile bar.

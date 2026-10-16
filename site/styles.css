@@ -1,28 +1,30 @@
 /* Anthony Tilotta: portfolio
-   Palette: Terminal (dark, mono) / light. Accent #52fd9a. Type: JetBrains Mono (dark), Inter (light).
+   Palette: blue network. Dark = terminal mode (mono, accent #4da8ff); light = Inter, navy #0b2545 fills. Type: JetBrains Mono (dark), Inter (light).
    Motion: one easing family, short durations, honours reduced-motion. */
 
 :root {
   color-scheme: dark;
 
-  --bg: #070a08;
-  --surface: #0f1511;
-  --surface-2: #0b100d;
-  --text: #d6f5e3;
-  --text-2: rgba(214, 245, 227, 0.72);
-  --text-3: rgba(214, 245, 227, 0.5);
-  --divider: rgba(82, 253, 154, 0.14);
-  --divider-2: rgba(82, 253, 154, 0.26);
+  --bg: #050b16;
+  --surface: #0b1626;
+  --surface-2: #08111e;
+  --text: #dbe9fb;
+  --text-2: rgba(219, 233, 251, 0.72);
+  --text-3: rgba(219, 233, 251, 0.5);
+  --divider: rgba(77, 168, 255, 0.14);
+  --divider-2: rgba(77, 168, 255, 0.26);
 
-  --accent: #52fd9a;
-  --accent-200: #e3fff0;
-  --accent-300: #b4fed3;
-  --accent-400: #86fdb8;
-  --accent-700: #1f9c58;
-  --accent-800: #145f37;
-  --accent-900: #0b2a19;
-  --section: #0a2416;
-  --section-glow: #11402a;
+  --accent: #4da8ff;
+  --accent-rgb: 77, 168, 255;
+  --accent-200: #e3f1ff;
+  --accent-300: #b3d9ff;
+  --accent-400: #80c0ff;
+  --accent-700: #1f6fc0;
+  --accent-800: #154c85;
+  --accent-900: #0a2140;
+  --section: #071c38;
+  --section-glow: #0e3566;
+  --stat-glow: rgba(14, 53, 102, 0.75);
 
   /* semantic tokens (light theme overrides these) */
   --tint-3: rgba(233, 233, 237, 0.03);
@@ -30,21 +32,21 @@
   --tint-6: rgba(233, 233, 237, 0.06);
   --tint-8: rgba(233, 233, 237, 0.08);
   --tint-10: rgba(233, 233, 237, 0.1);
-  --divider-3: rgba(82, 253, 154, 0.38);
+  --divider-3: rgba(77, 168, 255, 0.38);
   --link: var(--accent-300);
   --link-hover: var(--accent-200);
   --accent-text: var(--accent);
   --accent-fill: var(--accent);
   --accent-fill-hover: var(--accent-400);
-  --on-accent: #03140a;
+  --on-accent: #031022;
   --tag-accent-bg: var(--accent-900);
   --tag-accent-ring: var(--accent-800);
   --tag-accent-fg: var(--accent-300);
-  --media-bg: #030504;
-  --glass: rgba(7, 10, 8, 0.78);
-  --glass-2: rgba(15, 21, 17, 0.92);
-  --rail-grad: rgba(15, 21, 17, 0.4);
-  --ambient-1: rgba(10, 42, 25, 0.9);
+  --media-bg: #02060d;
+  --glass: rgba(5, 11, 22, 0.78);
+  --glass-2: rgba(11, 22, 38, 0.92);
+  --rail-grad: rgba(11, 22, 38, 0.4);
+  --ambient-1: rgba(10, 35, 72, 0.9);
   --ambient-2: rgba(0, 0, 0, 0.4);
   --stat-text: var(--text);
   --stat-text-2: var(--text-2);
@@ -84,23 +86,23 @@
   --tint-6: rgba(23, 24, 42, 0.05);
   --tint-8: rgba(23, 24, 42, 0.07);
   --tint-10: rgba(23, 24, 42, 0.09);
-  --link: #0b7a40;
-  --link-hover: #075c30;
-  --accent-text: #0a8a48;
-  --accent-fill: #0f321f;
-  --accent-fill-hover: #1a4a30;
+  --link: #1a5fb4;
+  --link-hover: #134a8e;
+  --accent-text: #1f6fc0;
+  --accent-fill: #0b2545;
+  --accent-fill-hover: #133a6b;
   --on-accent: #ffffff;
-  --tag-accent-bg: #e3fcef;
-  --tag-accent-ring: #bdf5d6;
-  --tag-accent-fg: #0a6b38;
+  --tag-accent-bg: #e6f1ff;
+  --tag-accent-ring: #c3dcfb;
+  --tag-accent-fg: #1a5fb4;
   --media-bg: #e4e4ec;
   --glass: rgba(245, 245, 249, 0.78);
   --glass-2: rgba(255, 255, 255, 0.92);
   --rail-grad: rgba(255, 255, 255, 0.7);
-  --ambient-1: rgba(82, 253, 154, 0.16);
+  --ambient-1: rgba(77, 168, 255, 0.16);
   --ambient-2: rgba(23, 24, 42, 0.04);
-  --stat-text: #e3fff0;
-  --stat-text-2: rgba(227, 255, 240, 0.72);
+  --stat-text: #e3f1ff;
+  --stat-text-2: rgba(227, 241, 255, 0.72);
   --shadow-1: 0 1px 2px rgba(23, 24, 42, 0.05), 0 10px 28px -14px rgba(23, 24, 42, 0.16);
   --shadow-2: 0 2px 4px rgba(23, 24, 42, 0.06), 0 28px 56px -18px rgba(23, 24, 42, 0.22);
 }
@@ -219,8 +221,6 @@ button { font: inherit; color: inherit; }
   position: sticky;
   top: 0;
   height: 100dvh;
-  overflow-y: auto;
-  scrollbar-width: none;
   padding: 48px 36px 32px;
   border-right: 1px solid var(--divider);
   display: flex;
@@ -228,14 +228,27 @@ button { font: inherit; color: inherit; }
   gap: 28px;
   background: linear-gradient(180deg, var(--rail-grad), transparent 45%);
 }
-.rail::-webkit-scrollbar { display: none; }
+/* Profile block stays pinned; only the nav + actions scroll on short screens. */
+.rail > :not(.rail-scroll) { flex-shrink: 0; }
+.rail-scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  scrollbar-width: none;
+  margin: 0 -14px;
+  padding: 0 14px 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.rail-scroll::-webkit-scrollbar { display: none; }
 
 .avatar {
   width: 148px;
   height: 148px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 0 0 1px var(--divider-2), 0 0 0 7px rgba(82, 253, 154, 0.08);
+  box-shadow: 0 0 0 1px var(--divider-2), 0 0 0 7px rgba(var(--accent-rgb), 0.08);
 }
 
 .rail h1 {
@@ -424,7 +437,7 @@ button { font: inherit; color: inherit; }
 .btn-primary:hover {
   background: var(--accent-fill-hover);
   color: var(--on-accent);
-  box-shadow: 0 10px 28px -12px rgba(82, 253, 154, 0.7);
+  box-shadow: 0 10px 28px -12px rgba(var(--accent-rgb), 0.7);
 }
 
 .btn-secondary {
@@ -441,7 +454,7 @@ button { font: inherit; color: inherit; }
   color: var(--link);
 }
 .btn-ghost:hover {
-  background: rgba(82, 253, 154, 0.1);
+  background: rgba(var(--accent-rgb), 0.1);
   color: var(--link-hover);
 }
 
@@ -551,7 +564,7 @@ section { scroll-margin-top: 28px; }
   color: var(--stat-text);
   padding: 26px 22px 24px;
   background:
-    radial-gradient(320px 180px at 50% 0%, rgba(17, 64, 42, 0.7), transparent 70%),
+    radial-gradient(320px 180px at 50% 0%, var(--stat-glow), transparent 70%),
     var(--section);
 }
 .stat b {
@@ -1138,6 +1151,7 @@ a.feat-row { text-decoration: none; color: inherit; }
   .avatar { width: 108px; height: 108px; }
   .rail h1 { font-size: 26px; }
   .rail .rule, .rail-nav, .rail-foot, .rail .theme-toggle { display: none; }
+  .rail-scroll { display: contents; }
   .rail-actions {
     grid-column: 1 / -1;
     flex-direction: row;
@@ -1212,7 +1226,7 @@ a.feat-row { text-decoration: none; color: inherit; }
 }
 :root:not([data-theme="light"]) .kicker,
 :root:not([data-theme="light"]) .stat b {
-  text-shadow: 0 0 12px rgba(82, 253, 154, 0.35);
+  text-shadow: 0 0 12px rgba(var(--accent-rgb), 0.45);
 }
 :root:not([data-theme="light"]) .stat b { color: var(--accent); }
 :root:not([data-theme="light"]) h1,
