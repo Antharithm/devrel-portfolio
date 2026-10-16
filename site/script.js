@@ -22,7 +22,7 @@
     }
     rootEl.setAttribute("data-theme", t);
     const meta = $('meta[name="theme-color"]');
-    if (meta) meta.content = t === "light" ? "#f5f5f9" : "#161826";
+    if (meta) meta.content = t === "light" ? "#f5f5f9" : "#070a08";
     $$(".theme-toggle").forEach((b) => b.setAttribute("aria-label", t === "light" ? "Switch to dark mode" : "Switch to light mode"));
   };
   applyTheme(rootEl.getAttribute("data-theme") || (lightMQ.matches ? "light" : "dark"), false);
