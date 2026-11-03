@@ -33,6 +33,6 @@ TypeScript, JavaScript, Python, Solidity, SQL, React, React Native, Node.js, Har
 ## Contact
 
 - [Portfolio](https://antharithm.github.io/devrel-portfolio/)
-- [LinkedIn](https://www.linkedin.com/in/anthonytilotta/)
+- [LinkedIn](https://www.linkedin.com/in/anthony-tilotta/)
 - [GitHub](https://github.com/Antharithm)
 - Email: anthonytilotta303@gmail.com
