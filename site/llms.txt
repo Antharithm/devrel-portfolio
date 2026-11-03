@@ -1,0 +1,38 @@
+# Anthony Tilotta
+
+> Lead Developer Relations Engineer at North, driving adoption of North's payment APIs. Previously Lead Developer Advocate at Moralis, and founder of Cortado. Eight years across full-stack, data and API-driven platforms, with 1M+ video views, 500+ published tutorials and open-source tooling that teaches AI agents to write integrations that actually run. Remote, based in West Palm Beach, FL.
+
+## Current role
+
+- **Lead Developer Relations Engineer, North** (2026 to now, USA Remote): Developer Experience team. Drives adoption of North's payment APIs: Embedded Checkout, Online and In-Person Payments, Merchant Boarding and B2B Payments. Maintains API specs with engineering, writes docs, builds sample apps, produces video tutorials and gives live demos at conferences, meetups and workshops. Surfaces onboarding friction and doc gaps to product, and builds open-source, AI-assisted integration tooling.
+
+## Experience
+
+- **Lead Developer Advocate, Moralis** (2025 to 2026, Remote): Tutorials driving a 55% API adoption lift and fewer support tickets. Built and managed docs.moralis.com alongside core engineering.
+- **Technical Enablement Manager (DevRel), Comcast** (2018 to 2025, Philadelphia, PA): Training content and Python ad-scheduling tooling for internal advertising platforms; the "over the shoulder" video programme became the team's onboarding standard.
+- **Developer Advocate, Eat The Blocks** (2022 to 2023, contract): Video courses and open-source example code on smart contracts and web3 tooling.
+- **Blockchain Developer, Tellor** (2020 to 2022, contract): Built, tested and deployed the Tellor oracle across EVM chains.
+
+## Selected work
+
+- [Moralis Onchain Skills](https://github.com/Antharithm): Self-initiated, open-source skill files covering 135+ Moralis endpoints across 40+ chains, so Claude Code and Cursor emit API calls that exist.
+- [Moralis Documentation](https://docs.moralis.com/): Developer docs built and managed end to end (Data API, Streams, Data Feeds, RPC Nodes, Auth API), with reference pages generated from the OpenAPI spec.
+- [Moralis tutorials](https://docs.moralis.com/get-started/tutorials/overview): Written tutorials and guides.
+- [Tutorial library on YouTube](https://www.youtube.com/@MoralisWeb3): Video tutorials, including the Continuum series on Moralis event data infrastructure.
+- [Cortado Coffee](https://cortadocoffee.app/): Self-built iOS and Android app (React Native, TypeScript, Google Places API) for finding specialty coffee shops. [App Store](https://apps.apple.com/us/app/cortado-coffee/id6748534743), [Google Play](https://play.google.com/store/apps/details?id=com.cortado.app).
+
+## Stack
+
+TypeScript, JavaScript, Python, Solidity, SQL, React, React Native, Node.js, Hardhat, Ethers.js, REST, WebSockets, AWS, Claude Code, Codex CLI, Cursor.
+
+## Education
+
+- FinTech certificate, University of Pennsylvania
+- BA Media Studies & Production, Temple University
+
+## Contact
+
+- [Portfolio](https://antharithm.github.io/devrel-portfolio/)
+- [LinkedIn](https://www.linkedin.com/in/anthonytilotta/)
+- [GitHub](https://github.com/Antharithm)
+- Email: anthonytilotta303@gmail.com
